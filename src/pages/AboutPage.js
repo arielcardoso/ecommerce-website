@@ -8,6 +8,9 @@ const About = () => {
           <h1>About Page</h1>
         </div>
       </div>
+      <div className='container'>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis assumenda asperiores ipsa ad deserunt id molestiae incidunt, similique in excepturi quasi nulla voluptates, exercitationem iusto cum porro doloribus est facere.</p>
+      </div>
     </>
   )
 }

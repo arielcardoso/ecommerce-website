@@ -3,12 +3,15 @@ nav {
     z-index: 100;
     left: 0;
     right: 0;
-    padding: $nav-padding;
     background-color: rgba(0, 0, 0, 0.8);
-    color: $light-color;
-    min-height: $nav-height;
-    @include flex-between;
-    
+
+    .navbar {
+        padding: $nav-padding;
+        color: $light-color;
+        min-height: $nav-height;
+        @include flex-between;
+    }
+
     .nav-menu {
         @include list-reset;
         position: absolute;

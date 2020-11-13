@@ -18,3 +18,48 @@
         }
     }
 }
+
+.product-info {
+    @include flex-between;
+    img {
+        width: 45%;
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+    .content {
+        width: 45%;
+        .title {
+            font-size: 2.7rem;
+            font-weight: 300;
+            color: #333;
+        }
+        .price{
+            font-size: 2rem;
+            font-weight: 300;
+            color: #333;
+            color: goldenrod;
+        }
+        .sku {
+            margin-bottom: 0;
+        }
+        .button {
+            background-color: goldenrod;
+            color: #fff;
+            padding: 1rem 2rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            display: inline-block;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: all 0.4s ease-in-out;
+            i {
+                margin-right: 1rem;
+                font-size: 1.4rem;
+            }
+            &:hover{
+                background-color: #333;
+                color: goldenrod;
+            }
+        }
+    }
+}
