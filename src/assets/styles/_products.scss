@@ -1,6 +1,20 @@
 .product-list {
     @include flex-between;
     .product-item {
-        width: 30%;
+        width: $three-col-width;
+        margin-bottom: 2rem;
+        text-decoration: none;
+        img {
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+        .title, .price{
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: #333;
+        }
+        .price{
+            color: goldenrod;
+        }
     }
 }
