@@ -42,6 +42,9 @@ nav {
             }
         }
     }
+    .nav-icon i.lni {
+        font-size: 20px;
+    }
 
     @include mq($screen-md-min) {
         background-color: rgba(0, 0, 0, 0.3);
@@ -49,14 +52,15 @@ nav {
         .nav-icon{
             display: none;
         }
-        .nav-icon i.lni {
-            font-size: 22px !important;
-        }
         .nav-menu {
-            width: 30%;
-            @include flex-between;
+            width: auto;
+            display:flex;
+            justify-content: flex-end;
             position: static;
-            height: 0;
+            height: auto;
+            li {
+                padding: 0 $navItem-padding*2;
+            }
             &.active {
                 li {
                     padding: initial;
