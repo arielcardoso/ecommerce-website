@@ -7,7 +7,7 @@ const Products = () => {
     <>
       <div className="page-header">
         <div className='container'>
-          <h1>Products Page</h1>
+          <h1>Products</h1>
         </div>
       </div>
 
