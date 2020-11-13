@@ -1,9 +1,10 @@
 .product-list {
     @include flex-between;
     .product-item {
-        width: $three-col-width;
+        width: 100%;
         margin-bottom: 2rem;
         text-decoration: none;
+        text-align: center;
         img {
             border-radius: 6px;
             margin-bottom: 10px;
@@ -17,17 +18,25 @@
             color: goldenrod;
         }
     }
+    @include mq($screen-md-min) {
+        .product-item {
+            width: $three-col-width;
+            text-align: left;
+        }
+    }
 }
 
 .product-info {
     @include flex-between;
     img {
-        width: 45%;
+        width: 100%;
         border-radius: 6px;
         margin-bottom: 10px;
     }
     .content {
-        width: 45%;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 2rem;
         .title {
             font-size: 2.7rem;
             font-weight: 300;
@@ -60,6 +69,15 @@
                 background-color: #333;
                 color: goldenrod;
             }
+        }
+    }
+
+    @include mq($screen-md-min) {
+        img, .content {
+            width: 45%;
+        }
+        .content {
+            text-align: left;
         }
     }
 }
