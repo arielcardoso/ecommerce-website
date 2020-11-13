@@ -10,6 +10,11 @@ nav {
         color: $light-color;
         min-height: $nav-height;
         @include flex-between;
+        align-items: center;
+    }
+
+    .logo img {
+        max-width: 120px;
     }
 
     .nav-menu {
@@ -52,6 +57,10 @@ nav {
     @include mq($screen-md-min) {
         background-color: rgba(0, 0, 0, 0.3);
 
+        .logo img {
+            max-width: 180px;
+        }
+        
         .nav-icon{
             display: none;
         }
@@ -61,13 +70,10 @@ nav {
             justify-content: flex-end;
             position: static;
             height: auto;
-            li {
-                padding: 0 $navItem-padding*2;
-            }
-            &.active {
-                li {
-                    padding: initial;
-                }
+
+            li, &.active{
+                background-color: transparent;
+                height: auto;
             }
             
         }

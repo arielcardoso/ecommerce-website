@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import LineIcon from 'react-lineicons';
 import {Link, NavLink} from 'react-router-dom'
 
+import Logo from '../assets/images/logo.svg';
+
 const Nav = () => {
     const [clicked, setClicked] = useState(false);
     const handleClick = () => {
@@ -11,7 +13,10 @@ const Nav = () => {
     return (
         <nav>
             <div className="navbar container">
-                <Link onClick={handleClick} to='/' >PROJECT</Link>
+                <Link className='logo' to='/' >
+                    <img src={Logo} title='LoremPie' />
+                </Link>
+
                 <div className='nav-icon' onClick={handleClick}>
                     <LineIcon name={clicked ? 'close' : 'menu'} size="lg" />
                 </div>
