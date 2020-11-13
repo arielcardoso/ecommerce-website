@@ -3,7 +3,11 @@ import React from 'react'
 const Products = () => {
   return (
     <>
-      <h1>Products Page</h1>
+      <div className="page-header">
+        <div className='container'>
+          <h1>Products Page</h1>
+        </div>
+      </div>
     </>
   )
 }

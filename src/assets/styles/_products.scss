@@ -1,0 +1,6 @@
+.product-list {
+    @include flex-between;
+    .product-item {
+        width: 30%;
+    }
+}

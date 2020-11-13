@@ -1,0 +1,43 @@
+.hero-slider{
+  position: relative;
+  display: flex;
+  height: 500px;
+  align-items: center;
+  background: #000 url(../images/home_banner.jpg) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+
+  &:before{
+    content: '';
+    display: block;
+    background: rgba(0,0,0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .container{
+    z-index: 1;
+  }
+  h1{
+    line-height: 100%;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -1px;
+    font-weight: 300;
+    text-align: left;
+  }
+  .big{
+    font-size: 3.8rem;
+    display: block;
+    margin: 1.2rem 0 2.7rem;
+    font-weight: 300;
+  }
+
+  .huge{
+    font-size: 6rem;
+    display: block;
+    font-weight: 500;
+  }
+
+}

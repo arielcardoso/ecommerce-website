@@ -1,4 +1,6 @@
 import React, {useState} from 'react'
+import ReactDOM from 'react-dom';
+import LineIcon from 'react-lineicons';
 import {Link, NavLink} from 'react-router-dom'
 
 const Nav = () => {
@@ -10,7 +12,7 @@ const Nav = () => {
         <nav>
             <Link onClick={handleClick} to='/' >PROJECT</Link>
             <div className='nav-icon' onClick={handleClick}>
-                <i className= {clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                <LineIcon name={clicked ? 'close' : 'menu'} size="lg" />
             </div>
             <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
                 <li>
