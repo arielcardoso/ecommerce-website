@@ -14,7 +14,7 @@ const Nav = () => {
         <nav>
             <div className="navbar container">
                 <Link className='logo' to='/' >
-                    <img src={Logo} title='LoremPie' />
+                    <img src={Logo} alt='LoremPie' />
                 </Link>
 
                 <div className='nav-icon' onClick={handleClick}>
