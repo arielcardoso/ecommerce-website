@@ -1,6 +1,6 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import listItem from '../utils/ProductList'
+import ProductCard from '../components/ProductCard'
 
 const Products = () => {
   return (
@@ -14,11 +14,7 @@ const Products = () => {
       <div className='container'>
         <div className='product-list'>
           {listItem.map((item, index) => (
-            <Link to={`product/${item.sku}`} id={index} className='product-item' >
-              <img src={item.image} alt={item.name}/>
-              <div className="title">{item.name}</div>
-              <div className="price"><small>CAD</small> {item.price}</div>
-            </Link>
+            <ProductCard index={index} item={item} />
           ))}
         </div>
       </div>

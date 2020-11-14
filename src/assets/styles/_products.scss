@@ -2,12 +2,28 @@
     @include flex-between;
     .product-item {
         width: 100%;
+        position: relative;
         margin-bottom: 2rem;
         text-decoration: none;
         text-align: center;
         img {
             border-radius: 6px;
             margin-bottom: 10px;
+        }
+        .likes {
+            position: absolute;
+            top: 20px;
+            right: 0px;
+            padding: 6px 15px 3px 8px;
+            background-color: rgba($color: #fff, $alpha: 0.7);
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+            z-index: 200;
+            color: rgb(219, 42, 42);
+            text-shadow: 0px 0px 10px rgba($color: #fff, $alpha: 0.8);
+        }
+        .likes i {
+            margin-right: 5px;
         }
         .title, .price{
             font-size: 1.4rem;
@@ -40,10 +56,35 @@
 
 .product-info {
     @include flex-between;
-    img {
+    .image {
+        position: relative;
         width: 100%;
-        border-radius: 6px;
-        margin-bottom: 10px;
+        img {
+            width: 100%;
+            border-radius: 6px;
+        }
+        .likes {
+            position: absolute;
+            top: 20px;
+            right: 0px;
+            padding: 6px 15px 3px 8px;
+            background-color: rgba($color: #fff, $alpha: 0.7);
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+            z-index: 200;
+            color: rgb(219, 42, 42);
+            text-shadow: 0px 0px 10px rgba($color: #fff, $alpha: 0.8);
+            font-size: 16px;
+            i {
+                margin-right: 5px;
+            }
+        }
+        
+        @include mq($screen-md-min) {
+            .likes {
+                font-size: 22px;
+            }
+        }
     }
     .content {
         text-align: center;
@@ -85,8 +126,8 @@
     }
 
     @include mq($screen-md-min) {
-        img, .content {
-            width: 45%;
+        .image, .content {
+            width: $two-col-width;
         }
         .content {
             text-align: left;

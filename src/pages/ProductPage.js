@@ -24,7 +24,13 @@ const ProductPage = (props) => {
       </div>
       <div className='container'>
         <div className='product-info' >
-          <img src={item.image} alt={item.name}/>
+          <div className="image">
+            <img src={item.image} alt={item.name}/>
+            <div className="likes">
+                <LineIcon name='heart-filled' />
+                {item.likes}
+            </div>
+          </div>
           <div className="content">
             <p className="sku">SKU: {item.sku}</p>
             <div className="title">{item.name}</div>

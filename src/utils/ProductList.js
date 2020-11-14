@@ -13,55 +13,64 @@ const ProductList = [
         name: "Premium Strawberry Pie", 
         sku: 101, 
         price: 29.00, 
-        image: p01
+        image: p01,
+        likes: 525
     },
     {
         name: "Premium Apple Pie", 
         sku: 102, 
         price: 29.00, 
-        image: p02
+        image: p02,
+        likes: 412
     },
     {
         name: "Premium Orange Pie", 
         sku: 103, 
         price: 29.00, 
-        image: p03
+        image: p03,
+        likes: 391
     },
     {
         name: "Banana Pie", 
         sku: 104, 
         price: 15.00, 
-        image: p04
+        image: p04,
+        likes: 388
     },
     {
         name: "Nut Pie", 
         sku: 105, 
         price: 22.00, 
-        image: p05
+        image: p05,
+        likes: 349
     },
     {
         name: "Special Raspberry Pie", 
         sku: 106, 
         price: 25.00, 
-        image: p06
+        image: p06,
+        likes: 407
     },
     {
         name: "Special Salt Pie", 
         sku: 107, 
         price: 22.00, 
-        image: p07
+        image: p07,
+        likes: 120
     },
     {
         name: "Avocado Pie", 
         sku: 108, 
         price: 15.00, 
-        image: p08
+        image: p08,
+        likes: 207
     },
     {
         name: "Green Salt Pie", 
         sku: 109, 
         price: 15.00, 
-        image: p09
+        image: p09,
+        likes: 175
     }
 ];
 
