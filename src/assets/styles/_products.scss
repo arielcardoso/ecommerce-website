@@ -26,6 +26,18 @@
     }
 }
 
+.home-list {
+    .product-item {
+        width: 100%;
+    }
+    @include mq($screen-md-min) {
+        .product-item {
+            width: $four-col-width;
+            text-align: left;
+        }
+    }
+}
+
 .product-info {
     @include flex-between;
     img {

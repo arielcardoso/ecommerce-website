@@ -36,7 +36,7 @@ const ProductList = [
     {
         name: "Nut Pie", 
         sku: 105, 
-        price: 25.00, 
+        price: 22.00, 
         image: p05
     },
     {
@@ -48,7 +48,7 @@ const ProductList = [
     {
         name: "Special Salt Pie", 
         sku: 107, 
-        price: 25.00, 
+        price: 22.00, 
         image: p07
     },
     {
